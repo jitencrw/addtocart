@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Myntra</title>
+  </head>
+
+
+<body>
+  <button class = "buttons" id = "add-to-cart" onclick="
+    cartItems+=1;
+    document.querySelector('.heading').innerText = `Your cart has ${cartItems} items`;
+  
+    ">Add to cart</button>
+
+  <button class = "buttons" id ="add-2-items" onclick="
+  cartItems+=2;
+  document.querySelector('.heading').innerText = `Your cart has ${cartItems} items`;
+  ">Add 2 items</button>
+
+
+  <button class = "buttons" id="remove items" onclick="
+  cartItems-=1;
+  document.querySelector('.heading').innerText = `Your cart has ${cartItems} items`;
+
+">Remove items</button>
+
+
+  <button class = "buttons" id = "reset-cart" onclick="
+  cartItems=0;
+  document.querySelector('.heading').innerText = `Your cart has ${cartItems} items`;
+  ">Reset cart</button>
+
+  <h1 class="heading"></h1>
+
+  <script>
+let cartItems = 0;
+    document.querySelector(".heading").innerText = `Your cart has ${cartItems} items`;
+  </script>
+</body>
+</html>
